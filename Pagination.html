@@ -33,7 +33,7 @@
         color: #343a40;
         line-height: 1;
 
-        margin: 200px auto;
+        margin-top: 200px;
       }
 
       ul {
@@ -54,36 +54,21 @@
         height: 36px;
         width: 36px;
 
-        color: #343a40;
+        border-radius: 50%;
       }
 
       li:hover,
       .current {
         cursor: pointer;
-
-        border: 1px solid #087f5b;
-        border-radius: 50%;
-
         background-color: #087f5b;
+        color: #fff;
       }
 
       li:hover svg {
         stroke: #fff;
       }
 
-      li:hover a,
-      .current {
-        color: #fff;
-      }
-
-      li:first-child {
-        width: 48px;
-        height: 48px;
-
-        border: 1px solid #087f5b;
-        border-radius: 50%;
-      }
-
+      li:first-child,
       li:last-child {
         width: 48px;
         height: 48px;
@@ -103,16 +88,6 @@
         text-decoration: none;
         color: inherit;
         font-size: 18px;
-      }
-
-      .dots {
-        width: auto;
-      }
-
-      .dots:hover {
-        cursor: text;
-        border: none;
-        background-color: transparent;
       }
     </style>
   </head>
@@ -141,9 +116,7 @@
       <li><a href="#">4</a></li>
       <li><a href="#">5</a></li>
       <li><a href="#">6</a></li>
-      <li class="dots">
-        <span>...</span>
-      </li>
+      <span>...</span>
       <li><a href="#">23</a></li>
 
       <li>
