@@ -32,6 +32,87 @@
         font-family: 'Inter', sans-serif;
         color: #343a40;
         line-height: 1;
+
+        margin: 200px auto;
+      }
+
+      ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+
+        list-style: none;
+        height: 48px;
+      }
+
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        height: 36px;
+        width: 36px;
+
+        color: #343a40;
+      }
+
+      li:hover,
+      .current {
+        cursor: pointer;
+
+        border: 1px solid #087f5b;
+        border-radius: 50%;
+
+        background-color: #087f5b;
+      }
+
+      li:hover svg {
+        stroke: #fff;
+      }
+
+      li:hover a,
+      .current {
+        color: #fff;
+      }
+
+      li:first-child {
+        width: 48px;
+        height: 48px;
+
+        border: 1px solid #087f5b;
+        border-radius: 50%;
+      }
+
+      li:last-child {
+        width: 48px;
+        height: 48px;
+
+        border: 1px solid #087f5b;
+        border-radius: 50%;
+      }
+
+      svg {
+        stroke: #087f5b;
+
+        width: 24px;
+        height: 24px;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+        font-size: 18px;
+      }
+
+      .dots {
+        width: auto;
+      }
+
+      .dots:hover {
+        cursor: text;
+        border: none;
+        background-color: transparent;
       }
     </style>
   </head>
@@ -42,7 +123,7 @@
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
-          stroke-width="1.5"
+          stroke-width="2"
           stroke="currentColor"
           class="size-6"
         >
@@ -56,11 +137,13 @@
 
       <li><a href="#">1</a></li>
       <li><a href="#">2</a></li>
-      <li><a href="#">3</a></li>
+      <li class="current"><a href="#">3</a></li>
       <li><a href="#">4</a></li>
       <li><a href="#">5</a></li>
-      <li><a href="#"></a><a href="#"></a>6</li>
-      <li><span>...</span></li>
+      <li><a href="#">6</a></li>
+      <li class="dots">
+        <span>...</span>
+      </li>
       <li><a href="#">23</a></li>
 
       <li>
@@ -68,7 +151,7 @@
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
-          stroke-width="1.5"
+          stroke-width="2"
           stroke="currentColor"
           class="size-6"
         >
